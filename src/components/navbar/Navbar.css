@@ -36,12 +36,9 @@
     cursor: pointer;
 }
 
-.nav-menu hr {
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background: #ff4141;
+.nav-menu li.active a {
+    font-weight: bold;
+    border-bottom: 2px solid #ff4141;
 }
 
 .nav-login-cart {
@@ -73,8 +70,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -35px;
-    margin-left: -55px;
+    margin-top: -60px;
+    margin-left: 35px;
     border-radius: 11px;
     font-size: 14px;
     background: red;
