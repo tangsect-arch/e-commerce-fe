@@ -1,0 +1,82 @@
+.shop-component {
+    /* margin:0 -2.5rem; */
+    display: flex;
+    justify-content: space-between; /* Aligns items to the left and right */
+    align-items: center; /* Vertically centers items */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    background: linear-gradient(180deg, #d4cbd4, #21310422);
+}
+
+/* Styles for the left component */
+.left-component {
+    flex: 1; /* Allows the left component to take up available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    line-height: 4rem;
+}
+
+/* .left-container {
+    line-height: 3rem;
+} */
+
+.left-container h2{
+    margin: 0;
+    font-size: 1rem; /* Adjust as needed */
+    font-weight: normal;
+    color: #090909;
+}
+
+.left-container h1{
+    margin-top: 0;
+    font-size: 4rem; /* Adjust as needed */
+    font-weight: bold;
+    color: #171717;;
+}
+
+/* Styles for the right component */
+.right-component {
+    flex: 1; /* Allows the right component to take up available space */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    align-items: center;
+}
+
+.right-image{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #ff4141; 
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between text and icon */
+    font-size: 1rem; /* Adjust font size */
+    cursor: pointer;
+    border-radius: 1.5rem;
+    font-weight: 500;
+}
+
+.arrow {
+    height: 0.6rem; /* Adjust arrow icon size */
+    width: auto; /* Maintain aspect ratio */
+    /* filter: invert(1); Invert colors   */
+}
+
+/* Styles for the image in h1 */
+.img-class {
+    height: 2.5rem;
+    width: auto; 
+}
+
+/* Styles for the right component image */
+.right-component img {
+    width: 80%; /* Ensure the image covers the full component width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+}
