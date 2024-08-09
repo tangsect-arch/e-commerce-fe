@@ -1,0 +1,86 @@
+/* General styles for the items container */
+.items {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    gap: 1rem; /* Space between grid items */
+    padding: 1rem; /* Padding around the grid container */
+    box-sizing: border-box; /* Include padding in width calculations */
+    width: 100%; /* Ensure container fits within the viewport */
+}
+
+.items .product {
+    flex: 1 1 calc(25% - 1rem); /* Adjust width for 4 items per row */
+    box-sizing: border-box; /* Include padding in width calculations */
+    /* Optional: Adjust min and max width for responsiveness */
+    min-width: 200px; /* Minimum width for responsive behavior */
+}
+  
+  /* Styles for individual product items */
+.product {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    cursor: pointer;
+    overflow: hidden; /* Ensure that zoom effect does not overflow */
+    position: relative; /* For relative positioning */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effec*/
+}
+
+.product:hover  {
+    transform: scale(1.04); 
+}
+  
+  /* Styles for images */
+.product img {
+    width: 100%; /* Make images responsive to their container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the container without being distorted */
+}
+
+.product-details {
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: normal; 
+    text-align: center;
+}
+
+.product-price {
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+}
+
+.old-amount {
+    text-decoration: line-through; 
+    color: #888; 
+}
+
+.new-amount {
+    font-weight: bold; 
+    color: #000; 
+}
+  
+  /* Responsive adjustments */
+  @media (min-width: 1200px) {
+    .items {
+      grid-template-columns: repeat(5, 1fr); /* 5 columns for large screens */
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .items {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Flexible columns */
+    }
+  }
+  
