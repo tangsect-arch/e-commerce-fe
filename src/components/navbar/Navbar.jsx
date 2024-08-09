@@ -43,10 +43,10 @@ const Navbar = () => {
       </ul>
       <div className="nav-login-cart">
         <Link to="/login">
-          <button>Login</button>
+          <button onClick={() => setMenu("")}>Login</button>
         </Link>
         <div className="nav-cart">
-          <Link to="/cart">
+          <Link to="/cart" onClick={() => setMenu("")}>
             <img src={cart_icon} alt="Cart" />
           </Link>
           <div className="nav-cart-count">0</div>
