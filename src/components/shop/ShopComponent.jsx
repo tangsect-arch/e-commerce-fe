@@ -9,19 +9,17 @@ export default function ShopComponent() {
     // <div className="shop-container">
     <div className="shop-component">
       <div className="left-component">
-        <div className="left-container">
-          <h2>NEW ARRAIVALS ONLY</h2>
-          <h1>
-            new <img className="img-class" src={hand_icon} alt="" />
-            <br />
-            collections <br />
-            for everyone
-          </h1>
-          <button>
-            Latest Collection
-            <img className="arrow" src={arrow} alt="" />
-          </button>
-        </div>
+        <h2>NEW ARRAIVALS ONLY</h2>
+        <h1>
+          new <img className="img-class" src={hand_icon} alt="" />
+          <br />
+          collections <br />
+          for everyone
+        </h1>
+        <button>
+          Latest Collection
+          <img className="arrow" src={arrow} alt="" />
+        </button>
       </div>
       <div className="right-component">
         <img className="right-image" src={background} alt="" />
