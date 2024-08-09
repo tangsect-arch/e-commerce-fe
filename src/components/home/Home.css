@@ -1,5 +1,5 @@
 .shop-component {
-    /* margin:0 -2.5rem; */
+    margin:0 -0.5rem;
     display: flex;
     justify-content: space-between; /* Aligns items to the left and right */
     align-items: center; /* Vertically centers items */

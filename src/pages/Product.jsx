@@ -1,5 +1,6 @@
 import React from "react";
+import { Items } from "../components/items/Items";
 
 export const Product = () => {
-  return <div>Product</div>;
+  return <Items />;
 };
