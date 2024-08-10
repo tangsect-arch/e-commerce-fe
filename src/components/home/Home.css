@@ -17,10 +17,6 @@
     line-height: 4rem;
 }
 
-/* .left-container {
-    line-height: 3rem;
-} */
-
 .left-container h2{
     margin: 0;
     font-size: 1rem; /* Adjust as needed */
@@ -79,4 +75,8 @@ button {
     width: 80%; /* Ensure the image covers the full component width */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure the image covers the space without distortion */
+}
+
+.popular-text{
+    text-align: center;
 }
