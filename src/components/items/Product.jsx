@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./Items.css";
-
 export const Product = ({ item, index } = props) => {
   const key = `product-${index}`;
   return (
