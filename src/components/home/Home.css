@@ -1,46 +1,62 @@
 .shop-component {
     margin:0 -0.5rem;
     display: flex;
-    justify-content: space-between; /* Aligns items to the left and right */
-    align-items: center; /* Vertically centers items */
-    box-sizing: border-box; /* Include padding in element's total width and height */
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
     background: linear-gradient(180deg, #d4cbd4, #21310422);
 }
 
-/* Styles for the left component */
+.banner-section {
+    display: flex;
+    margin: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #d4cbd4, #21310422);
+    max-height: 22rem;
+    overflow: hidden;
+}
+
 .left-component {
-    flex: 1; /* Allows the left component to take up available space */
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box; /* Include padding in element's total width and height */
+    box-sizing: border-box;
     line-height: 4rem;
+    justify-content: center;
 }
 
 .left-container h2{
     margin: 0;
-    font-size: 1rem; /* Adjust as needed */
+    font-size: 1rem; 
     font-weight: normal;
     color: #090909;
 }
 
 .left-container h1{
-    margin-top: 0;
-    font-size: 4rem; /* Adjust as needed */
+    margin: 0;
+    font-size: 4rem; 
     font-weight: bold;
     color: #171717;;
 }
 
-/* Styles for the right component */
+.shop-component button{
+    margin: 2rem 0;
+}
+
 .right-component {
-    flex: 1; /* Allows the right component to take up available space */
-    box-sizing: border-box; /* Include padding in element's total width and height */
+    flex: 1; 
+    box-sizing: border-box; 
     align-items: center;
 }
 
 .right-image{
-    display: flex;
+    display: block;
     justify-content: center;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 button {
@@ -51,32 +67,31 @@ button {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* Space between text and icon */
-    font-size: 1rem; /* Adjust font size */
+    gap: 0.5rem;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 1.5rem;
     font-weight: 500;
 }
 
 .arrow {
-    height: 0.6rem; /* Adjust arrow icon size */
-    width: auto; /* Maintain aspect ratio */
-    /* filter: invert(1); Invert colors   */
+    height: 0.6rem; 
+    width: auto; 
 }
 
-/* Styles for the image in h1 */
 .img-class {
     height: 2.5rem;
     width: auto; 
 }
 
-/* Styles for the right component image */
+
 .right-component img {
-    width: 80%; /* Ensure the image covers the full component width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image covers the space without distortion */
+    width: 80%;
+    height: auto;
+    object-fit: cover;
 }
 
-.popular-text{
+.main-headings{
     text-align: center;
+    text-decoration: underline;
 }
