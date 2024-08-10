@@ -9,7 +9,7 @@ export const Bannar = () => {
           <h1>Exclusive</h1>
           <h1>Offers For You</h1>
           <h2>ONLY ON BEST SELLING PRODUCTS</h2>
-          <button>Latest Collection</button>
+          <button>Check now</button>
         </div>
       </div>
       <div className="right-component">

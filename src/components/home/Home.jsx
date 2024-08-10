@@ -8,12 +8,12 @@ import { NewCollections } from "./NewCollections";
 
 export default function Home() {
   return (
-    <>
+    <div className="container">
       <Main />
       <PopularItems />
       <Bannar />
       <NewCollections />
       <ContactUs />
-    </>
+    </div>
   );
 }
