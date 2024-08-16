@@ -44,26 +44,26 @@
 }
 
 .product-details {
-  word-wrap: break-word; 
+  word-wrap: break-word;
   overflow-wrap: break-word;
-  white-space: normal; 
+  white-space: normal;
   text-align: center;
 }
 
 .product-price {
-  display: flex; 
-  align-items: center; 
-  gap: 0.5rem; 
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .old-amount {
-  text-decoration: line-through; 
-  color: #888; 
+  text-decoration: line-through;
+  color: #888;
 }
 
 .new-amount {
-  font-weight: bold; 
-  color: #000; 
+  font-weight: bold;
+  color: #000;
 }
 
 @media (min-width: 1200px) {
@@ -72,8 +72,14 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 896px) {
   .items {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .items .product {
+    flex: 1 1 calc(50% - 1rem);
+    box-sizing: border-box;
+    min-width: 200px;
   }
 }
