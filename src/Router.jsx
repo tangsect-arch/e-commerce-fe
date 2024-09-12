@@ -8,7 +8,6 @@ import { LoginSignup } from "./pages/LoginSignup";
 
 function Router() {
   return (
-    // <BrowserRouter>
     <Routes>
       <Route path="/" element={<Shop />} />
       <Route path="/men" element={<ShopCategory category="men" />} />
@@ -20,7 +19,6 @@ function Router() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/login" element={<LoginSignup />} />
     </Routes>
-    // </BrowserRouter>
   );
 }
 
